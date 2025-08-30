@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varsha Sri Siri Surya Venkata Lakshmi Devi Koyyala </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        :root {
+            --magic-purple: #a855f7;
+            --forest-green: #059669;
+            --starlight: #fef3c7;
+            --midnight: #1e293b;
+            --enchanted-gold: #f59e0b;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+            color: #f1f5f9;
+        }
+        
+        .magic-glow {
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+        }
+        
+        .forest-glow {
+            box-shadow: 0 0 15px rgba(5, 150, 105, 0.4);
+        }
+        
+        .gold-glow {
+            box-shadow: 0 0 15px rgba(245, 158, 11, 0.4);
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .sparkle {
+            animation: sparkle 2s ease-in-out infinite;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #a855f7, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes sparkle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.1); }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(71, 85, 105, 0.3);
+        }
+        
+        .btn-primary {
+            background: var(--magic-purple);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: #9333ea;
+            transform: translateY(-2px);
+        }
+        
+        .floating-elements {
+            position: fixed;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .floating-element {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            opacity: 0.6;
+        }
+        
+        .floating-element:nth-child(1) {
+            top: 20%;
+            left: 10%;
+            background: var(--enchanted-gold);
+            animation: sparkle 3s ease-in-out infinite;
+        }
+        
+        .floating-element:nth-child(2) {
+            top: 40%;
+            right: 20%;
+            background: var(--magic-purple);
+            animation: sparkle 2s ease-in-out infinite 0.5s;
+        }
+        
+        .floating-element:nth-child(3) {
+            bottom: 40%;
+            left: 20%;
+            background: var(--forest-green);
+            animation: sparkle 2.5s ease-in-out infinite 1s;
+        }
+        
+        .floating-element:nth-child(4) {
+            top: 60%;
+            left: 50%;
+            background: var(--enchanted-gold);
+            animation: sparkle 2s ease-in-out infinite 1.5s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating magical elements -->
+    <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center px-4 relative z-10">
+        <div class="text-center max-w-4xl mx-auto">
+            <div class="floating mb-8">
+                <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold gradient-text mb-4">
+                    
+                </h1>
+                <div class="flex items-center justify-center gap-2 mb-6">
+                    <span class="text-yellow-300 text-xl">✨</span>
+                    <p class="text-lg md:text-xl text-gray-300">
+                        Building magic with code 💫
+                    </p>
+                    <span class="text-purple-400 text-xl">✨</span>
+                </div>
+            </div>
+            
+            <div class="mb-8 fade-in-up">
+                <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold text-yellow-100 mb-4">
+                    Varsha Sri Siri Surya Venkata Lakshmi Devi Koyyala
+                </h2>
+                <p class="text-base md:text-lg text-gray-300 max-w-2xl mx-auto">
+                    Hi, I'm Varsha – a passionate developer blending creativity with code. 
+                    I'm on a quest to craft delightful web experiences that feel like magic.
+                </p>
+            </div>
+
+            <button onclick="scrollToSection('projects')" class="btn-primary magic-glow px-6 py-3 rounded-lg text-lg font-medium">
+                Explore My Work ✨
+            </button>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">About Me</h2>
+            <div class="card rounded-lg p-6 md:p-8 magic-glow">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-semibold mb-4 text-yellow-300">Academic Journey</h3>
+                        <p class="text-gray-300 mb-4">
+                            <strong>Bachelor of Technology - BTech, Information Technology</strong><br>
+                            Sasi Institute of Technology & Engineering<br>
+                            <span class="text-sm text-gray-400">Sep 2023 - Apr 2027</span>
+                        </p>
+                        <p class="text-gray-300 mb-6">
+                            Currently pursuing my degree where I'm weaving together theoretical knowledge with practical magic.
+                        </p>
+                        <h3 class="text-xl md:text-2xl font-semibold mb-4 text-green-400">My Interests</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm border border-purple-500/30">UI/UX Design</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm border border-purple-500/30">Web Development</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm border border-purple-500/30">Generative AI</span>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm border border-purple-500/30">Full Stack Development</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-48 h-48 md:w-64 md:h-64 mx-auto bg-gradient-to-br from-purple-500/20 to-green-500/20 rounded-full flex items-center justify-center border-2 border-purple-500/30 magic-glow">
+                            <div class="text-4xl md:text-6xl">🧙‍♀️</div>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-400 italic">
+                            "Crafting digital spells, one line of code at a time"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">Magical Skills</h2>
+            <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+                <div class="card rounded-lg p-6 forest-glow hover:scale-105 transition-transform">
+                    <div class="text-center">
+                        <div class="text-3xl md:text-4xl mb-4 text-green-400">⚡</div>
+                        <h3 class="text-lg md:text-xl font-semibold mb-4 text-green-400">Programming Languages</h3>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <span class="text-yellow-300">🛡️</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-yellow-300">🛡️</span>
+                            <span>C</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card rounded-lg p-6 magic-glow hover:scale-105 transition-transform">
+                    <div class="text-center">
+                        <div class="text-3xl md:text-4xl mb-4 text-purple-400">🎨</div>
+                        <h3 class="text-lg md:text-xl font-semibold mb-4 text-purple-400">Web Technologies</h3>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <span class="text-yellow-300">✨</span>
+                            <span>HTML</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-yellow-300">✨</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-yellow-300">✨</span>
+                            <span>JavaScript (Basic)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card rounded-lg p-6 gold-glow hover:scale-105 transition-transform">
+                    <div class="text-center">
+                        <div class="text-3xl md:text-4xl mb-4 text-yellow-400">🧠</div>
+                        <h3 class="text-lg md:text-xl font-semibold mb-4 text-yellow-400">Design & Tools</h3>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <span class="text-purple-400">⭐</span>
+                            <span>UI/UX Design Principles</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-purple-400">⭐</span>
+                            <span>Responsive Layouts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">Enchanted Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="card rounded-lg p-6 hover:scale-105 transition-all magic-glow">
+                    <div class="text-3xl md:text-4xl mb-4">🧮</div>
+                    <h3 class="text-lg md:text-xl font-semibold mb-2 text-purple-400">Calculator App</h3>
+                    <p class="text-sm text-yellow-400 mb-4">HTML, CSS, JavaScript</p>
+                    <p class="text-gray-300 mb-4 text-sm">Created a personal website to showcase projects, resume, and contact details using HTML, CSS, and JavaScript. Implemented responsive layout for mobile and desktop views.</p>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-green-400 font-medium">2025 - 02/2025</span>
+                        <span class="text-yellow-300">🔗</span>
+                    </div>
+                </div>
+
+                <div class="card rounded-lg p-6 hover:scale-105 transition-all magic-glow">
+                    <div class="text-3xl md:text-4xl mb-4">🛍️</div>
+                    <h3 class="text-lg md:text-xl font-semibold mb-2 text-purple-400">E-Commerce UI Design</h3>
+                    <p class="text-sm text-yellow-400 mb-4">HTML, CSS</p>
+                    <p class="text-gray-300 mb-4 text-sm">Created a basic UI layout for an online shopping website with category filters, product cards, and navigation. Used HTML/CSS to design homepage and product sections.</p>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-green-400 font-medium">06/2025 - 06/2025</span>
+                        <span class="text-yellow-300">🔗</span>
+                    </div>
+                </div>
+
+                <div class="card rounded-lg p-6 hover:scale-105 transition-all magic-glow">
+                    <div class="text-3xl md:text-4xl mb-4">🍽️</div>
+                    <h3 class="text-lg md:text-xl font-semibold mb-2 text-purple-400">Restaurant Menu</h3>
+                    <p class="text-sm text-yellow-400 mb-4">HTML, CSS</p>
+                    <p class="text-gray-300 mb-4 text-sm">Designed a static restaurant menu webpage using HTML and CSS with visually organized categories and responsive layout. Applied CSS styling for fonts, colors, and section spacing.</p>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-green-400 font-medium">05/2025 - 05/2025</span>
+                        <span class="text-yellow-300">🔗</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements & Certifications -->
+    <section id="achievements" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">Magical Achievements</h2>
+            <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+                <div class="card rounded-lg p-6 forest-glow">
+                    <h3 class="text-lg md:text-xl font-semibold mb-4 text-green-400 flex items-center gap-2">
+                        <span class="text-yellow-300">⭐</span>
+                        Key Achievements
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <span class="text-purple-400 mt-1">✨</span>
+                            <span class="text-sm">Completed 45-day Full Stack Development Internship (Python) - Gained hands-on experience in building responsive web applications using Python, HTML, CSS, and JavaScript</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-purple-400 mt-1">✨</span>
+                            <span class="text-sm">Cisco Certified – Networking Basics - Acquired foundational knowledge of computer networks, protocols, and internet technologies through Cisco certification</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-purple-400 mt-1">✨</span>
+                            <span class="text-sm">AR/VR Workshop Participation</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-purple-400 mt-1">✨</span>
+                            <span class="text-sm">Generative AI Workshop Participation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card rounded-lg p-6 magic-glow">
+                    <h3 class="text-lg md:text-xl font-semibold mb-4 text-purple-400 flex items-center gap-2">
+                        <span class="text-yellow-300">🛡️</span>
+                        Certifications
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <span class="text-yellow-300 mt-1">⭐</span>
+                            <span class="text-sm">Python Programming – Problem Solving (CodeChef)</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-yellow-300 mt-1">⭐</span>
+                            <span class="text-sm">AR & VR Workshop Certificate</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-yellow-300 mt-1">⭐</span>
+                            <span class="text-sm">Generative AI Workshop Certificate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">Send a Magical Message</h2>
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+                <div>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-6 text-yellow-300">Let's Connect!</h3>
+                    <div class="space-y-4">
+                        <a href="mailto:vnv65272@gmail.com" class="flex items-center gap-3 text-gray-300 hover:text-purple-400 transition-colors">
+                            <span class="text-yellow-300">📧</span>
+                            sriv65272@sasi.ac.in
+                        </a>
+                        <a href="https://www.linkedin.com/in/varsha-sri-koyyala-093b2330" target="_blank" class="flex items-center gap-3 text-gray-300 hover:text-purple-400 transition-colors">
+                            <span class="text-yellow-300">💼</span>
+                            Varsha's LinkedIn
+                        </a>
+                    </div>
+                    <div class="mt-8 text-center">
+                        <div class="text-4xl md:text-6xl mb-4 floating">🦉</div>
+                        <p class="text-sm text-gray-400 italic">
+                            "Wise owl awaits your message"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card rounded-lg p-6 magic-glow">
+                    <form id="contactForm" class="space-y-4">
+                        <div>
+                            <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 bg-slate-700/50 border border-slate-600 rounded-lg focus:border-purple-400 focus:outline-none text-white">
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 bg-slate-700/50 border border-slate-600 rounded-lg focus:border-purple-400 focus:outline-none text-white">
+                        </div>
+                        <div>
+                            <textarea name="message" placeholder="Your magical message..." required rows="4" class="w-full p-3 bg-slate-700/50 border border-slate-600 rounded-lg focus:border-purple-400 focus:outline-none text-white resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full btn-primary magic-glow py-3 rounded-lg font-medium">
+                            Send Message ✨
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-800/30 backdrop-blur border-t border-slate-700 py-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="mb-8">
+                <div class="flex justify-center gap-4 md:gap-8 text-sm flex-wrap">
+                    <button onclick="scrollToSection('about')" class="text-gray-400 hover:text-purple-400 transition-colors">About</button>
+                    <button onclick="scrollToSection('skills')" class="text-gray-400 hover:text-purple-400 transition-colors">Skills</button>
+                    <button onclick="scrollToSection('projects')" class="text-gray-400 hover:text-purple-400 transition-colors">Projects</button>
+                    <button onclick="scrollToSection('achievements')" class="text-gray-400 hover:text-purple-400 transition-colors">Achievements</button>
+                    <button onclick="scrollToSection('contact')" class="text-gray-400 hover:text-purple-400 transition-colors">Contact</button>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-700 pt-8">
+                <p class="text-gray-400 mb-4">
+                    Made with 💙 by Varsha 
+                </p>
+                <div class="flex justify-center gap-2 text-xl md:text-2xl">
+                    <span class="sparkle">⭐</span>
+                    <span class="sparkle" style="animation-delay: 0.5s">🍃</span>
+                    <span class="sparkle" style="animation-delay: 1s">✨</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            alert('Message sent! ✨\nThank you for reaching out. I\'ll get back to you soon!');
+            
+            this.reset();
+        });
+
+        window.addEventListener('scroll', function() {
+            const sections = ['hero', 'about', 'skills', 'projects', 'achievements', 'contact'];
+            const scrollPos = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const element = document.getElementById(section);
+                if (element && scrollPos >= element.offsetTop && scrollPos < element.offsetTop + element.offsetHeight) {
+                   
+                }
+            });
+        });
+    </script>
+</body>
+</html>
